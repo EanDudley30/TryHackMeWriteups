@@ -119,7 +119,7 @@ We get our **Answer** for task 3: **lin**
 
 ### Task 4:  What service can you bruteforce with the text file found?
 
-We can bruteforce** SSH** using Hydra since we have a username. Conviently, the lock.txt file has a list of what appears to be passwords so we can run a wordlist based attack on SSH to login. 
+We can bruteforce** SSH** using Hydra since we have a username. Conveniently, the lock.txt file has a list of what appears to be passwords so we can run a wordlist based attack on SSH to login. 
 
 ### Task 5: What is the users password? 
 
