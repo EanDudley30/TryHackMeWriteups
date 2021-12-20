@@ -149,7 +149,7 @@ We see that our password is: **RedDr4gonSynd1cat3**.
 
 Login to ssh using ``` lin@[targetIP]``` and when prompted for the password use the answer from question 4. 
 
-After loging into the system use cat to read the user.txt file: 
+After logging into the system use cat to read the user.txt file: 
 ``` bash 
 cat user.txt 
 THM{CR1M3_SyNd1C4T3}
@@ -159,7 +159,7 @@ THM{CR1M3_SyNd1C4T3}
 
 ### Task 7: root.txt 
 
-Now that we have an inital foothold, lets try to gain root access. To start lets see if we have authroization to run anything as root that we may be able to exploit: 
+Now that we have an initial foothold, lets try to gain root access. To start let's see if we have authorization to run anything as root that we may be able to exploit: 
 
 ```bash
 sudo -l 
@@ -173,7 +173,7 @@ User lin may run the following commands on bountyhacker:
 
 ``` 
 
-We see that we have authroization to run ``` tar ``` as root. We can exploit this by using the following command: 
+We see that we have authorization to run ``` tar ``` as root. We can exploit this by using the following command: 
 
 ``` bash
 sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
@@ -196,4 +196,4 @@ THM{80UN7Y_h4cK3r}
 We get our **root flag: THM{80UN7Y_h4cK3r}**
 
 ### Summary 
-We initally scan this machine using nmap and have to force ports to respond using the  -Pn option. From NMAP we see that we can login to FTP anonymous access in order to read a tasklist and a password list. We can then use that passowrd list and the username found in the tasklist to brute-force an attack on SSH using Hydra. Using the login credentials to SSH found by Hydra, we can login and get our inital access. Then we can use sudo on the target machine to find if there are any vulnerable commands we can utilize to get root access. Sudo shows that tar is able to be executed at a super user level, and we are able to exploit tar to get root level access. 
+We initially scan this machine using nmap and have to force ports to respond using the  -Pn option. From NMAP we see that we can login to FTP anonymous access in order to read a tasklist and a password list. We can then use that password list and the username found in the tasklist to brute-force an attack on SSH using Hydra. Using the login credentials to SSH found by Hydra, we can login and get our initial access. Then we can use sudo on the target machine to find if there are any vulnerable commands we can utilize to get root access. Sudo shows that tar is able to be executed at a super user level, and we are able to exploit tar to get root level access. 
