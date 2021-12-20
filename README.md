@@ -7,7 +7,8 @@ These writeupsare intend for educational purposes. Please do your best to solve 
 
 ## Published Challenges:
 
-**Easy**
+**Easy**:
+
 Bounty Hunter 
 
 ## Support My Growth:
