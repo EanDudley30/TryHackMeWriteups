@@ -2,12 +2,10 @@
 
 This repository is used to publish tryhackme writeups. Please consider supporting this mission by adding your own writeups!
 
-Disclaimer:
+## Disclaimer: 
 These writeupsare intend for educational purposes. Please do your best to solve the challenges on your own.
 
-Challenges To be Posted Soon
-Agent Sudo
-Blue
+## Challenge Counts
 
-Support Our Growth:
-Love our writeups? Want to support the growth of this repository and our other related repositiories? Consider getting us a cup of coffee so we can keep on hacking: https://paypal.me/eandudley?locale.x=en_US
+## Support My Growth:
+Love my writeups? Want to support the growth of this repository and my other related repositiories? Consider donating a cup of coffee so I can keep on hacking: https://paypal.me/eandudley?locale.x=en_US
