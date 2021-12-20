@@ -129,7 +129,7 @@ Lets use **Hydra** as we talked about before to run an attack on SSH using the u
 hydra -l lin -P locks.txt 10.10.79.132 -t 4 ssh
 ``` 
 
-The ``` -l ``` flag specifies the username and the ``` -P ``` flag specifies the password list. The ``` -t 	``` flag is used to specifie the number of thread to use for the attack. Hydra recommends 4 threads for SSH. 
+The ``` -l ``` flag specifies the username and the ``` -P ``` flag specifies the password list. The ``` -t 	``` flag is used to specifies the number of thread to use for the attack. Hydra recommends 4 threads for SSH. 
 
 After running this command we should get the following output: 
 ``` bash 
